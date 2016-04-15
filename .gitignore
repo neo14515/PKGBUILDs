@@ -2,4 +2,7 @@
 .DS_Store
 *.pkg.tar.gz
 *.pkg.tar.xz
-**/*/.git
+*.tgz
+.git
+**/*/src
+**/*/pkg
