@@ -31,6 +31,6 @@ package() {
     install -d ${pkgdir}/{opt/franz,usr/{bin,share/pixmaps}}
     cp -R ${srcdir}/${_path}/* ${pkgdir}/opt/${pkgname}/
     install -Dm755 $srcdir/${pkgname}.sh ${pkgdir}/usr/bin/${pkgname}
-    install -Dm755 $srcdir/${pkgname}.png ${pkgdir}/usr/share/pixmaps/franz.png
+    install -Dm644 $srcdir/${pkgname}.png ${pkgdir}/usr/share/pixmaps/franz.png
     desktop-file-install ${srcdir}/${pkgname}.desktop --dir ${pkgdir}/usr/share/applications/
 }
